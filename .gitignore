@@ -1,18 +1,6 @@
-# Environment
 .env
-docker-compose.yml
-
-# Dependencies
+**/.env
 node_modules/
-vendor/
-target/
-
-# OS
+**/node_modules/
 .DS_Store
 Thumbs.db
-
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo

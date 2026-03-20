@@ -1,0 +1,20 @@
+{
+  "name": "job-simulator-backend",
+  "version": "1.0.0",
+  "description": "REST CRUD API for Job Simulator lab",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^4.19.2",
+    "pg": "^8.20.0"
+  }
+}
