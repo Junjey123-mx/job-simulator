@@ -1,4 +1,3 @@
-````markdown
 # Job Simulator — REST CRUD API
 
 API REST CRUD desarrollada en **Node.js + ExpressJS + PostgreSQL + Docker** para cumplir el laboratorio **Job Simulator** a nivel **Senior**.
@@ -61,7 +60,7 @@ Incluye:
 │   ├── nginx.conf
 │   └── public
 └── README.md
-````
+```
 
 ---
 
@@ -89,12 +88,12 @@ El contrato del laboratorio exige exactamente estos campos:
 
 Aunque la API debe respetar esos nombres fijos por contrato, semánticamente puede leerse así:
 
-* `campo1`: título de la canción
-* `campo2`: artista o banda
-* `campo3`: álbum
-* `campo4`: año
-* `campo5`: duración
-* `campo6`: disponible / favorita / activa
+- `campo1`: título de la canción
+- `campo2`: artista o banda
+- `campo3`: álbum
+- `campo4`: año
+- `campo5`: duración
+- `campo6`: disponible / favorita / activa
 
 Ejemplo temático:
 
@@ -280,26 +279,26 @@ curl -i -X DELETE http://localhost:8080/products/1
 
 Para `POST` y `PUT`:
 
-* todos los campos son requeridos
-* `campo1`, `campo2`, `campo3` deben ser strings no vacíos
-* `campo4` debe ser integer
-* `campo5` debe ser number válido
-* `campo6` debe ser boolean
+- todos los campos son requeridos
+- `campo1`, `campo2`, `campo3` deben ser strings no vacíos
+- `campo4` debe ser integer
+- `campo5` debe ser number válido
+- `campo6` debe ser boolean
 
 Para `PATCH`:
 
-* solo se validan los campos presentes
-* el resto del recurso no se modifica
+- solo se validan los campos presentes
+- el resto del recurso no se modifica
 
 ---
 
 ## Códigos HTTP manejados
 
-* `200 OK`
-* `201 Created`
-* `400 Bad Request`
-* `404 Not Found`
-* `500 Internal Server Error`
+- `200 OK`
+- `201 Created`
+- `400 Bad Request`
+- `404 Not Found`
+- `500 Internal Server Error`
 
 Todas las respuestas son JSON.
 
@@ -377,26 +376,22 @@ npm run dev
 
 Esta solución cumple con los requisitos Senior del laboratorio:
 
-* PostgreSQL real, sin almacenamiento en memoria
-* Docker obligatorio
-* `docker-compose.yml` funcional
-* PATCH parcial implementado
-* `.env.example` incluido
-* `.gitignore` correcto
-* script SQL de inicialización
-* separación clara entre:
-
-  * entrada (`app.js`)
-  * base de datos (`db.js`)
-  * rutas (`routes/products.js`)
-  * controladores (`controllers/productsController.js`)
-  * validaciones (`utils/validators.js`)
+- PostgreSQL real, sin almacenamiento en memoria
+- Docker obligatorio
+- `docker-compose.yml` funcional
+- PATCH parcial implementado
+- `.env.example` incluido
+- `.gitignore` correcto
+- script SQL de inicialización
+- separación clara entre:
+  - entrada (`app.js`)
+  - base de datos (`db.js`)
+  - rutas (`routes/products.js`)
+  - controladores (`controllers/productsController.js`)
+  - validaciones (`utils/validators.js`)
 
 ---
 
 ## Autor
 
 Proyecto desarrollado para el laboratorio **Job Simulator — REST CRUD API**.
-
-```
-```
