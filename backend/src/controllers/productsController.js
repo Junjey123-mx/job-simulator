@@ -1,7 +1,7 @@
 const { query } = require("../db");
 const { validateProductPayload } = require("../utils/validators");
 
-// Columnas permitidas — evita referencias sueltas al nombre de la tabla
+
 const COLUMNS = ["campo1", "campo2", "campo3", "campo4", "campo5", "campo6"];
 const SELECT_COLS = `id, ${COLUMNS.join(", ")}`;
 
@@ -18,7 +18,7 @@ async function getAllProducts(_req, res) {
   }
 }
 
-// GET /products/:id
+
 async function getProductById(req, res) {
   const id = Number(req.params.id);
   if (!Number.isInteger(id) || id <= 0) {
